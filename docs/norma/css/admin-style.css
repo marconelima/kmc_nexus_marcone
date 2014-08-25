@@ -1,0 +1,93 @@
+@import url(../includes/fontello/css/fontello.css);
+
+/* Custom fields */
+a.custom_parameters_link {
+	display:inline-block;
+	text-align: center;
+	border-radius: 2px;
+	border:1px solid #8db939;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	padding:10px 20px;
+	color:#ffffff;
+	background: #94c437;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#acda55), to(#7fb11f));
+	background: -webkit-linear-gradient(#acda55 0%, #7fb11f 100%);
+	background: -moz-linear-gradient(#acda55 0%, #7fb11f 100%);
+	background: -ms-linear-gradient(#acda55 0%, #7fb11f 100%);
+	background: -o-linear-gradient(#acda55 0%, #7fb11f 100%);
+	background: linear-gradient(#acda55 0%, #7fb11f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acda55', endColorstr='#7fb11f',GradientType=0 );
+	-webkit-box-shadow: inset 0px 0px 0px 1px rgba(172, 218, 85, 0.5);
+	-moz-box-shadow:    inset 0px 0px 0px 1px rgba(172, 218, 85, 0.5);
+	box-shadow:         inset 0px 0px 0px 1px rgba(172, 218, 85, 0.5);
+	text-shadow:#709a1f 1px 1px;
+}
+a.custom_parameters_link:visited {
+	color:#ffffff;
+}
+a.custom_parameters_link:hover {
+	color:#ffffff;
+	background: #7aa822;
+	filter: none;
+}
+
+.custom_parameters_section {
+	display:none;
+}
+.custom_parameters_section.opened {
+	display:table-row;
+}
+.custom_title {
+	font-size:13px;
+	font-style:normal;
+	font-weight:bold;
+	color:#191919;
+	border-bottom:1px solid #666666;
+	width:95%;
+	margin:4px 0 8px;
+}
+.custom_subtitle {
+	font-size:12px;
+	font-style:italic;
+	font-weight:bold;
+	color:#191919;
+	border-bottom:1px dashed #666666;
+	width:95%;
+	margin:4px 0 8px;
+}
+.custom_descr {
+	font-style:italic;
+	color:#666666;
+	width:95%;
+}
+
+
+/* Icons selector*/
+.icons_selector .default:before,
+.icons_selector .icon-default:before {
+	content: "";
+}
+.icons_selector .radio-icon-radio {
+	display:none;
+}
+.icons_selector .radio-icon-icon {
+	display:inline-block;
+	border:2px solid transparent;
+	cursor:pointer;
+	margin:0 5px 10px 0;
+	width:30px;
+	height:30px;
+	font-size:22px;
+}
+.icons_selector .radio-icon-icon:hover {
+	opacity:.8;
+}
+.icons_selector .radio-icon-icon:before {
+	margin:4px 0 0 4px;
+}
+
+.icons_selector .radio-icon-selected {
+	border:2px solid #ff5555;
+}

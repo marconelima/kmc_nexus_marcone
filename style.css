@@ -1,0 +1,167 @@
+/*
+Theme Name: Tema Wordpress KMC
+Theme URI: https://github.com/agkmc/kmc_wordpress/
+Author: Agência KMC
+Author URI: http://agenciakmc.com.br/
+Description: Tema padrão para desenvolvimento de sites wordpress da Agência KMC
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: agencia kmc, tema padrao wordpress
+Text Domain: temapadraokmc
+*/
+
+@import 'assets/css/style.min.css';
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-family:'Ubuntu', serif; font-size:100%; font-style:inherit; font-weight:inherit; outline:0; vertical-align:baseline; margin:0; padding:0; margin:0;}
+:focus{outline:0;}
+ol,ul{list-style:none;}
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{font-weight:normal;text-align:left;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+small{font-size:10px;}
+big{font-size:16px;}
+a img{border:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+h1,h2,h3,h4,h5,h6{font-weight:bold;}
+a:link,a:visited{color:#0066cc;text-decoration:none;outline:0;}
+a:hover,a:active{color:#0055a9;text-decoration:none;outline:0;}
+
+body{background:#fefefe; font:normal 13px/150% Arial, Helvetica, sans-serif;color:#363636;}
+
+.container-fluid{width:100%; height:100%; margin:0 !important; padding:0 !important;}
+
+.conteudo {width:1170px; margin:0 auto; }
+#corpo{ margin:0 auto; width:100%; background:#fff;	}
+
+#header{width:100%; margin:0; float:left; }
+#header_faixa_base {width:100%; height:40px; float:left; background:#eeeeee;}
+#header_faixa {width:100%; height:39px; float:left; background-image:linear-gradient(to left, #fafafa 0%, #fafafa 67%, #2065C2 67%, #2065C2 100%); }
+
+#header_faixa_telefone {float:left; text-align:right; height:39px; background:#2065C2;}
+#header_faixa_telefone img {margin-top:10px; } 
+#header_faixa_telefone .img_telefone { padding:0 !important;}
+#header_faixa_telefone .txt_telefone {font-size:16px; font-weight:bold; color:#ffffff; float:right; padding:0; margin-top:10px;}
+.ddd {font-size:12px;}
+
+#header_faixa_usuario {width:51px; height:40px; float:left; text-align:center; margin-left:10px;}
+#header_faixa_usuario img {margin:10px 0 0 0; padding:0 !important; }
+#header_faixa_usuario:hover {background:url(assets/img/background_redes.png) no-repeat top;}
+
+#header_faixa_redes {margin:0; padding:0; float:right;}
+#header_faixa_redes a {width:51px; height:40px; float:right; text-align:center;}
+#header_faixa_redes a img {margin:10px 0 0 0;}
+#header_faixa_redes a:hover {background:url(assets/img/background_redes.png) no-repeat top;}
+
+#header_faixa_busca {width:51px; height:40px; float:right; text-align:center;}
+#header_faixa_busca img {margin:10px 0 0 0;}
+#header_faixa_busca:hover {background:url(assets/img/background_redes.png) no-repeat top;}
+
+#header_logo { float:left; top:15px; position:absolute;}
+
+#header_menu {float:right; margin-top:40px; margin-bottom:1px;}
+#header_menu a {text-align:center; color:#808080; font-size:14px; float:right; text-transform:uppercase; font-weight:bold; padding:0 0 40px 0; margin-left:20px; border-bottom:10px solid #FFFFFF;}
+#header_menu a:hover {color:#000000; border-bottom:10px solid #2065C2;} 
+
+#header_banner {width:100%; float:left; height:auto; background:#999; background-image:linear-gradient(to left, #666666 0%, #fafafa 50%, #fafafa 50%, #666666 100%); text-align:center;}
+#header_banner img{text-align:center; margin:0 auto; z-index:1;}
+#header_banner_prev {position:relative; float:left; display:none; z-index:9; width:49px; height:0px; top:-250px; cursor:pointer;}
+#header_banner_next {position:relative; float:right; display:none; z-index:9; width:49px; height:0px; top:-250px; cursor:pointer;}
+
+#conteudo .titulo {font-size:15px; color:#000000; text-transform:uppercase; font-weight:bold; padding:10px 0 10px 10px; float:left; width:auto;}
+#conteudo .barra {width:50px; float:left; display:inline-block; border-bottom:2px solid #2065C2; margin-left:10px;}
+#conteudo .separacao {width:100%; height:1px; float:left;}
+#conteudo .separacao2 {width:100%; height:31px; float:left;}
+
+.content_destaque_item {text-align:center !important; float:left; margin:20px 0;}
+.content_destaque_item .imagem{ text-align:center; margin:0 auto;}
+.content_destaque_item .titulo {text-align:center; font-weight:bold; color:#000000; width:100%; float:left; margin:15px 0; font-size:15px; text-transform:none; padding:0; font-size:18px;}
+.content_destaque_item .texto {text-align:center; color:#6F6F6F; width:100%; float:left; font-size:12px;}
+
+#content_trabalhos {float:left; margin:30px 0; padding:0;}
+#content_trabalhos_prev {float:right; width:23px; margin-top:10px; cursor:pointer; margin-right:5px;}
+#content_trabalhos_next {float:right; width:23px; margin-top:10px; cursor:pointer; margin-right:15px;}
+.content_trabalhos_item {margin:20px 0; padding-left:10px;}
+.content_trabalhos_item .titulo {text-align:left; font-weight:bold; color:#000000; width:100%; float:left; font-size:13px; text-transform:none; margin:10px 0 0 0; padding:0;}
+.content_trabalhos_item .texto {text-align:left; color:#6F6F6F; width:100%; float:left; font-size:12px;}
+
+#contet_noticias {padding-left:0px;}
+.content_noticias_data {background:url(assets/img/fundo_data.png) no-repeat center; width:49px; height:52px; float:left; margin:20px 20px 20px 10px;}
+.content_noticias_data .mes {font-size:10px; color:#ffffff; width:100%; text-align:center; float:left; font-weight:bold;}
+.content_noticias_data .data {font-size:16px; color:#000000; width:100%; text-align:center; float:left; font-weight:bold; padding-top:3px;}
+.content_noticias_comentario {width:10%; float:left; margin-top:15px; font-size:9px; color:#d7d7d7; text-align:right;} 
+.content_noticias_item {margin:0; padding:20px 0; border-bottom:1px dashed #d9d9d9; height:auto; float:left;}
+.content_noticias_item .titulo {text-align:left; font-weight:bold; color:#000000; width:70%; float:left; font-size:13px; text-transform:none; margin:15px 0 0 0; padding:0;}
+.content_noticias_item .texto {text-align:left; color:#6F6F6F; width:80%; float:left; font-size:12px; margin-top:5px;}
+
+#contet_sobre {}
+.content_sobre_item {border:1px solid #e5e5e5; height:auto; float:left; width:100%; padding:15px; margin-top:5px; height:50px; overflow:hidden; background:url(assets/img/fundo_sobre.png) center no-repeat;}
+.content_sobre_item .titulo {width:90%; font-size:12px; padding:0; margin-bottom:10px; color:#000000;}
+.content_sobre_item .texto {width:100%; float:left; padding:0; color:#6F6F6F; font-size:12px;}
+.content_sobre_item .mais {width:10%; float:left; text-align:center; height:20px; color:#000000; font-size:22px; font-weight:bold; margin-top:-2px; cursor:pointer;}
+
+#contet_depoimento {}
+#contet_depoimento .depoimento {width:100%; float:left; height:152px; background:url(assets/img/fundo_depoimento.png) no-repeat; padding:20px; color:#fdfdfd; font-size:12px; font-style:italic;}
+.content_depoimento_item img {float:left; margin:10px 0 0 30px;}
+.content_depoimento_item .nome {font-size:12px; padding:0; color:#000000; font-weight:bold; float:left; margin:15px 0 0 10px; width:60%;}
+.content_depoimento_item .cargo {float:left; padding:0; color:#6F6F6F; font-size:12px; margin:0 0 0 10px; }
+
+#content_banner {width:100%; float:left; height:auto; margin:20px 0 0 0;}
+#content_banner_left {float:left; padding-left:0;}
+#content_banner_right {float:right; padding-right:0;}
+
+#content_parceiro {width:100%; height:auto; float:left; margin-top:20px; padding-left:0px;}
+.content_parceiro_box {width:25%; height:auto; float:left; border-right:2px solid #2065C2;}
+.content_parceiro_box .titulo {margin-left:0px; padding-left:0px;}
+.content_parceiro_box .texto {width:100%; float:left; padding:0; color:#6F6F6F; font-size:14px; margin-left:0px;}
+#content_parceiro_logo {width:75%; height:auto; float:left;}
+#content_parceiro_logo img {padding:5px 25px;}
+
+#footer_corpo {width:100%; height:auto; float:left; background:#343434; margin-top:30px; padding:20px 0; border:1px solid #3d3d3d;}
+#footer_corpo .titulo {font-size:15px; color:#FFFFFF; text-transform:uppercase; font-weight:bold; padding:10px 0 10px 10px; float:left; width:auto;}
+#footer_corpo .barra {width:50px; float:left; display:inline-block; border-bottom:2px solid #2065C2; margin-left:10px;}
+#footer_corpo .separacao {width:100%; height:1px; float:left;}
+
+#footer_post {float:left; height:auto; padding-left:0; margin-left:0px;  padding-right:0; padding-left:0;}
+#footer_post .titulo {padding:0 0 10px 0px !important; margin-top:10px;}
+#footer_post .barra {margin-left:0px !important;}
+.footer_post_item {width:100%; float:left; height:auto; margin:20px 0 10px 0px;} 
+.footer_post_item img {border:2px solid #4A4A4A; margin:5px 10px 0 0; float:left;}
+.footer_post_item .titulo {font-size:12px !important; font-weight:100; color:#ffffff; width:70% !important; float:left; padding:0 0 0 0 !important; margin:0 0 0 0 !important; padding-top:0px !important; text-transform:none !important; font-weight:100 !important;}
+.footer_post_item .texto {font-size:12px !important; font-weight:100; color:#898989; width:70%; float:left; padding:0; margin:0; text-transform:none !important;}
+
+.btn {padding:5px 15px !important; color:#ffffff; font-weight:bold; font-size:14px; background:#2065C2 !important; width:auto !important; float:right !important; text-transform:uppercase;}
+.btn:hover {background:#5994E3 !important;}
+
+#footer_fale {float:left; height:auto;  padding-right:0; padding-left:0;}
+#footer_fale_item {float:left; width:90%; height:auto; margin:20px 0 0 10px;}
+#footer_fale_item input {border:1px solid #494949; background:#3F3F3F; color:#FFFFFF; padding:5px; margin-bottom:10px; width:100%;}
+#footer_fale_item textarea {border:1px solid #494949; background:#3F3F3F; color:#FFFFFF; padding:5px; margin-bottom:10px; width:100%;}
+
+#footer_twitter {float:left; height:auto; padding-right:0 !important;  padding-right:0; padding-left:0;}
+.footer_twitter_item {width:100% !important; float:left; height:auto; margin:20px 0 0 10px;}
+.footer_twitter_item img {float:left; margin-right:10px; width:17px; }
+.footer_twitter_item .titulo {font-size:12px !important; font-weight:100; color:#898989 !important; width:80% !important; float:left; padding:0 !important; margin:0 !important; margin-top:-5px !important; text-transform:none !important;}
+.footer_twitter_item .texto {font-size:12px !important; font-weight:100; color:#ffffff !important; width:80% !important; padding:0 !important; margin-left:27px; text-transform:none;}
+.footer_twitter_item .subtexto {font-size:11px; font-weight:100; color:#898989; width:80%; float:left; margin-left:27px; padding:0 !important; text-transform:lowercase;}
+
+#footer_facebook {float:left; height:auto; padding-right:0; padding-left:0; }
+#footer_facebook_item {width:100%; height:auto; float:left; margin-top:20px; margin-left:10px;}
+#footer_facebook_item img {border:2px solid #4A4A4A; margin:5px 5px 0 0; float:left;}
+
+#footer_menu {width:100%; height:300px; float:left; background:#343434; padding:20px 0; } 
+#footer_menu .titulo {color:#898989; text-transform:uppercase; font-size:13px; width:100%; height:auto; float:left; }
+#footer_menu .servico { margin-top:-80px !important; float:left;}
+#footer_menu .catalogo { margin-top:-10px !important; float:left;}
+.footer_menu_item {float:left; height:auto; margin-right:20px; margin-top:10px; padding-left:0px;}
+#footer_menu .item {color:#898989; font-size:13px; font-weight:bold;}
+#footer_menu .subitem {color:#898989; font-size:13px; width:100%; float:left;}
+#footer_menu .subitem a {text-decoration:none;color:#898989;}
+#footer_menu .subitem a:hover {color:#FFFFFF;}
+
+#footer_barra {width:100%; height:60px; float:left;}
+#footer_barra .copyright {color:#2065C2; float:left; width:50%; margin-top:25px; font-style:italic; font-size:13px;  font-family:'Roboto', sans-serif;}
+#footer_barra .desenvolvido {float:right; margin-top:25px; width:50%; text-align:right;}

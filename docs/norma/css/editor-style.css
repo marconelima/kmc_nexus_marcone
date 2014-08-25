@@ -1,0 +1,109 @@
+@charset 'utf-8';
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic&subset=latin,cyrillic-ext,latin-ext);*/
+@import url(includes/fontello/css/fontello.css);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+html {
+	font-size: 62.5%; 					/* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+	overflow-y: scroll; 				/* Keeps page centred in all browsers regardless of content height */
+	-webkit-text-size-adjust: 100%; 	/* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+	-ms-text-size-adjust: 100%; 		/* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+.clearboth:after {
+	width: 100%;
+	content: "";
+	display: block;
+	clear: both;
+}
+body, button, input, select, textarea {
+	background: #fff;
+	color: #6f6f6f;
+	outline: none;
+	font-family: Ubuntu, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+caption, th {
+	font-weight: bold;
+	text-align: center;
+}
+td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color:#191919;
+	font-weight:bold;
+	margin:30px 0 16px 0;
+}
+h1 {	font-size: 21px; }
+h2 {	font-size: 18px; }
+h3 {	font-size: 16px; }
+h4 {	font-size: 14px; }
+h5 {	font-size: 13px; }
+h6 {	font-size: 12px; }
+
+p {
+	margin-bottom: 20px;
+}
+ul, ol {
+	margin: 0 0 20px 20px;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+}
+
+.sc_title {
+	text-transform:uppercase;
+	height: 39px;
+	overflow:hidden;
+	position:relative;
+	margin:0;
+}
+.sc_title:after {
+	content:"";
+	display:block;
+	position:absolute;
+	bottom:0;
+	height:0;
+	width:60px;
+	border-bottom:2px solid #ff5555;
+	margin-bottom:14px;
+}
